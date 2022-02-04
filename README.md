@@ -1,16 +1,30 @@
-# BIKE SHARING SYSTEMS IN LATIN AMERICA: ANNUAL REPORT
+# GENERAL INFORMATION
 
-## **ABOUT THE PROJECT**
+This README file was generated on [2021-10-07] by [Authors].
 
-This project is developed by the Latin American Bike Knowledge Sharing (LABIKS), after analyzing data from all in operation systems along the region. As a result of these analysis, we develop an annual report called "Bike Sharing Systems in Latin America" and we maintain an online map called "The Latin America Bike-sharing Map", which provides information from these BSS's.
+This project is developed by the Latin American Bike Knowledge Sharing (LABIKS) with peer, after analyzing data from all in operation systems along the region. As a result of these analysis, we develop an annual report called "Bike Sharing Systems in Latin America" and we maintain an online map called "The Latin America Bike-sharing Map", which provides information from these BSS's.
 
 Our intention is to increase the knowledge about this theme, and we aim to disseminate the acquired information and data to stimulate new ideas and new developments.
 
 This repository contains all data bases used in the reports over the release year. 
 
+Last updated: [2022-02-04].
+
+## *ABOUT THE PAPER**
+title: "Latin American bike sharing ecosystem overview: from data collection to implementation model portraits"
+authors: "BINATTI, G. ; BATALHA, Y. ; DECASTRO, J. ; OLIVEIRA, M. H. S."
+journal: "URBE Brazilian Journal of Urban Management"
+ISSN: 2175-3369
+site: www.scielo.br/urbe
+deposit date: ("2021-10-07")
+
+## *CONTACT INFORMATION*
+name: Juliana DeCastro
+email: jdecastro@pet.coppe.ufrj.br
+
 ## **DATABASE GLOSSARY**
 
-In the Table 1, we describe the variables used in the study and the possible values for every system. This was necessary to data’s standardization. 
+In the Table 3, we describe the variables used in the study and the possible values for every system. This was necessary to data’s standardization. 
      
 <br>     
 Table 1. Study’s variables 
