@@ -88,3 +88,6 @@ Table 2. Report 2019 - Contents
 | Sponsors_sectors|  image | .png |  
 | LatinoSBP_Report_2019_EN |  text | .pdf | 
 
+## License
+
+![CC-BY-NC](assets/cc-by-nc.png) The README is under a CC-BY-NC license. Usage by commercial entities is allowed, reselling it is not.
