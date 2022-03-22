@@ -2,13 +2,11 @@
 
 This README file was generated on [2021-10-07] by [Authors].
 
-This project is developed by the Latin American Bike Knowledge Sharing [LABIKS](https://labiks.org/en/about-us/) with peer, after analyzing data from all in operation systems along the region. As a result of these analysis, we develop an annual report called "Bike Sharing Systems in Latin America" and we maintain an online map called "The Latin America Bike-sharing Map", which provides information from these BSS's.
-
-Our intention is to increase the knowledge about this theme, and we aim to disseminate the acquired information and data to stimulate new ideas and new developments.
+This scientific paper was developed by the Latin American Bike Knowledge Sharing [LABIKS](https://labiks.org/en/about-us/) with peers, after analyzing the original database from the annual report called "Bike Sharing Systems in Latin America". In this repository you will find the code script (R version 4.0.4) that will allow you to replicate the methodology for data analysis and the results found. 
 
 This repository contains the original database on this page was copied from [LABIKS/Annual Report 2019](https://github.com/LABIKS/Annual_reports.git).
 
-
+Our intention is to increase the knowledge about this theme, and we aim to disseminate the acquired information and data to stimulate new ideas and new developments.
 
 ### **ABOUT THE PAPER**
 title: "Latin American bike sharing ecosystem overview: from data collection to implementation model portraits"
