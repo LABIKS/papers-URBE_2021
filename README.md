@@ -98,7 +98,6 @@ Source: Developed by authors (2021)
 | BSS_LA_DataBase | dataset| .csv | raw data |original dataset serves as input for Table 2 | Yes
 | bss_tidy | dataset | .csv  | analyzed data |serves as input for Chi-Square Test of Independence (Pearson) |Yes
 | annex_a_bss_tidy_descriptive-analysis| statitstical test| .txt | Annex Statitstical Tests|Descriptive Analysis of Chi_Square input dataset|Yes
-| X2_bss_tidy | dataset | .csv  | analyzed data |output for Chi-Square Test of Independence (Pearson) |Yes
 | dockbased_tidy |  dataset | .csv | analyzed data |Multiple Correspondence Analysis (MCA) input dataset serves as input for Table 3|Yes
 | annex_b_dockbased_tidy_descriptive-analysis-X2output| statitstical test |.txt |Annex Statitstical Tests|Descriptive Analysis of Chi_Square output dataset |Yes
 | annex_C_MCA_dockbased_160122 | statitstical test |.txt | Annex Statitstical Tests| MCA Analysis and Results |Yes
