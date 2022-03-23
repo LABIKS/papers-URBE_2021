@@ -26,7 +26,7 @@ Institution: [Transportation Engineering Program at Federal University of Rio de
 
 ### **METHODS FOR PROCESSING THE DATA AND FINDINGS**
 
-Code script (R version 4.0.4) that will allow you to replicate the methodology for data analysis and the results found. for data cleaning and analysis is provided as part of the dataset. It is available at https://bit.ly/3D3ieZy for review. 
+Code script (R version 4.0.4) that will allow you to replicate the methodology for data analysis and the results found. for data cleaning and analysis is provided as part of the dataset. It is available at [papers-URBE_2021 repository](https://github.com/LABIKS/papers-URBE_2021/blob/main/Script_URBE-2021.R) for review. 
 The goal here is transparency and accountability: anyone could replicate the research findings with the data and the R-script, an objective aligned with the best practices of open science
 
 The provided code reproduces:
