@@ -1,10 +1,9 @@
 ## GENERAL INFORMATION
 
 This README file was generated on [2021-10-07] by [Authors].
+Last updated: [2022-02-04].
 
 This scientific paper was developed by the Latin American Bike Knowledge Sharing [LABIKS](https://labiks.org/en/about-us/) with peers, after analyzing the original database from the annual report called "Bike Sharing Systems in Latin America". In this repository you will find the code script (R version 4.0.4) that will allow you to replicate the methodology for data analysis and the results found. 
-
-This repository contains the original database on this page was copied from [LABIKS/Annual Report 2019](https://github.com/LABIKS/Annual_reports.git).
 
 Our intention is to increase the knowledge about this theme, and we aim to disseminate the acquired information and data to stimulate new ideas and new developments.
 
@@ -22,10 +21,15 @@ keywords: Bike Sharing, Latin America, Multiple Correspondence Analysis, Transpo
 #### *CONTACT INFORMATION*
 name: Juliana DeCastro
 email: jdecastro@pet.coppe.ufrj.br
+Institution: [Transportation Engineering Program at Federal University of Rio de Janeiro](https://www.pet.coppe.ufrj.br/index.php/pt/) 
+[ORCID:](https://orcid.org/0000-0002-4841-1576) 
+
+### **METHODS FOR PROCESSING THE DATA**
+
 
 ### **DATABASE GLOSSARY**
 
-In the Table 1, we describe the variables used in the study and the possible values for every system. This was necessary to data’s standardization. 
+In the Table 1, we describe the original dataset (raw data) variables used in the study and the possible values for every system. This contains was copied from [LABIKS/Annual Report 2019](https://github.com/LABIKS/Annual_reports.git).
      
 <br>     
 Table 1. Study’s variables 
@@ -83,25 +87,30 @@ Table 1. Study’s variables
 Source: Developed by authors (2021)
 
 
-### **REPOSITORY CONTENT**
+### **DATASET REPOSITORY CONTENT**
+
+The provided code reproduces:
+
+- [ ] All numbers provided in text in the paper
+- [ ] All tables and figures in the paper
+- [ ] Selected tables and figures in the paper, as explained and justified below.
 
 Here you will find the repository's content along the years. The report will be released every year, using data from the past year.
 
 *For example: The report with 2019's data was release in 2020.* 
 
 <br>
-Table 2. Report 2019 - Contents
+Table 2. Dataset Contents
 
-|Content| Type | Format | 
-| --- | --- | --- |
-| BSS_LA_DataBase |  spreadsheet | .csv | 
-| Systems_per_country |  image | .png | 
-| Systems_type_per_country |  image | .png | 
-| Systems_per_cities_population |  image | .png | 
-| BSS_LA_Timeline |  image | .png | 
-| Largest_LA_Systems |  image | .png | 
-| Operators_type |  image | .png | 
-| Sponsors_sectors|  image | .png |  
+|Content| Type | Format | Folder | Note 
+| :---: |:---: | :---:  |  :---:   | :---:| 
+| BSS_LA_DataBase | dataset| .csv | raw data |input original dataset
+| Systems_type_per_country |  image | .png | input original dataset |
+| Systems_per_cities_population |  image | .png | input original dataset |raw data
+| BSS_LA_Timeline |  image | .png | input original dataset |raw data
+| Largest_LA_Systems |  image | .png | input original dataset |raw data
+| Operators_type |  image | .png | input original dataset |raw data
+| Sponsors_sectors|  image | .png |  input original dataset |raw data
 | LatinoSBP_Report_2019_EN |  text | .pdf | 
 
 > Code for data cleaning and analysis is provided as part of the replication package. It is available at https://dropbox.com/link/to/code/XYZ123ABC for review. It will be uploaded to the [JOURNAL REPOSITORY] once the paper has been conditionally accepted.
