@@ -1,0 +1,901 @@
+            ## Method Of Analysis 
+            
+            #Step 4: Chi-Square Test of Independence (Pearson)
+            ##Statistical hypotheses:
+            ###Null hypothesis (H0): There is no significant difference between the observed and the expected value between pairs of analyzed variables.
+            ###Alternative hypothesis (H1): There is a significant difference between the observed and the expected value between pairs of analyzed variables.
+            
+            
+            #### printing the p-value (H0 = p-value > 0.05, H1 = p-value < 0.05)
+            #### significance level (alpha = 0.05)
+            #res$p.value
+            
+            X2_System_Type_Country <- DescTools::Desc(System_Type_rev~Country_rev, bss_tidy_rev, digits=2, plotit = T)
+            
+            System_Type_rev ~ Country_rev (bss_tidy_rev)
+
+Summary: 
+n: 92, rows: 2, columns: 11
+
+Pearson's Chi-squared test:
+  X-squared = 17.831, df = 10, p-value = 0.05788
+Log likelihood ratio (G-test) test of independence:
+  G = 21.898, X-squared df = 10, p-value = 0.01563
+Mantel-Haenszel Chi-squared:
+  X-squared = 0.78198, df = 1, p-value = 0.3765
+
+Warning message:
+  Exp. counts < 5: Chi-squared approx. may be incorrect!!
+
+
+Phi-Coefficient        0.440
+Contingency Coeff.     0.403
+Cramer's V             0.440
+
+                                                                                                                                            
+                  Country_rev   Argentina   Brazil   Chile   Colombia   Costa Rica    Cuba   Ecuador   Mexico   Paraguay    Peru   Venezuela
+System_Type_rev                                                                                                                             
+                                                                                                                                            
+Dock Based        freq                  7       28       2         17            0       1         2        7          1       1           1
+                  perc              7.61%   30.43%   2.17%     18.48%        0.00%   1.09%     2.17%    7.61%      1.09%   1.09%       1.09%
+                  p.row            10.45%   41.79%   2.99%     25.37%        0.00%   1.49%     2.99%   10.45%      1.49%   1.49%       1.49%
+                  p.col           100.00%   66.67%  66.67%     94.44%        0.00% 100.00%   100.00%   46.67%    100.00% 100.00%     100.00%
+                                                                                                                                            
+Dockless          freq                  0       14       1          1            1       0         0        8          0       0           0
+                  perc              0.00%   15.22%   1.09%      1.09%        1.09%   0.00%     0.00%    8.70%      0.00%   0.00%       0.00%
+                  p.row             0.00%   56.00%   4.00%      4.00%        4.00%   0.00%     0.00%   32.00%      0.00%   0.00%       0.00%
+                  p.col             0.00%   33.33%  33.33%      5.56%      100.00%   0.00%     0.00%   53.33%      0.00%   0.00%       0.00%
+                                                                                                                                            
+Sum               freq                  7       42       3         18            1       1         2       15          1       1           1
+                  perc              7.61%   45.65%   3.26%     19.57%        1.09%   1.09%     2.17%   16.30%      1.09%   1.09%       1.09%
+                  p.row                 .        .       .          .            .       .         .        .          .       .           .
+                  p.col                 .        .       .          .            .       .         .        .          .       .           .
+                                                                                                                                            
+                                     
+                  Country_rev     Sum
+System_Type_rev                      
+                                     
+Dock Based        freq             67
+                  perc         72.83%
+                  p.row             .
+                  p.col             .
+                                     
+Dockless          freq             25
+                  perc         27.17%
+                  p.row             .
+                  p.col             .
+                                     
+Sum               freq             92
+                  perc        100.00%
+                  p.row             .
+                  p.col             .
+                                     
+            
+            
+            
+            X2_System_Type_Countries_Group <- DescTools::Desc(System_Type_rev~Countries_Group_rev, bss_tidy_rev, digits=2, plotit = T)
+            
+            System_Type_rev ~ Countries_Group_rev (bss_tidy_rev)
+
+Summary: 
+n: 92, rows: 2, columns: 5
+
+Pearson's Chi-squared test:
+  X-squared = 1.8778, df = 4, p-value = 0.7582
+Log likelihood ratio (G-test) test of independence:
+  G = 1.9528, X-squared df = 4, p-value = 0.7444
+Mantel-Haenszel Chi-squared:
+  X-squared = 0.21871, df = 1, p-value = 0.64
+
+Warning message:
+  Exp. counts < 5: Chi-squared approx. may be incorrect!!
+
+
+Phi-Coefficient        0.143
+Contingency Coeff.     0.141
+Cramer's V             0.143
+
+                                                                                               
+                  Countries_Group_rev   Argentina   Brazil   Colombia   Mexico   Others     Sum
+System_Type_rev                                                                                
+                                                                                               
+Dock Based        freq                          6       28         14       11        8      67
+                  perc                      6.52%   30.43%     15.22%   11.96%    8.70%  72.83%
+                  p.row                     8.96%   41.79%     20.90%   16.42%   11.94%       .
+                  p.col                    85.71%   66.67%     77.78%   73.33%   80.00%       .
+                                                                                               
+Dockless          freq                          1       14          4        4        2      25
+                  perc                      1.09%   15.22%      4.35%    4.35%    2.17%  27.17%
+                  p.row                     4.00%   56.00%     16.00%   16.00%    8.00%       .
+                  p.col                    14.29%   33.33%     22.22%   26.67%   20.00%       .
+                                                                                               
+Sum               freq                          7       42         18       15       10      92
+                  perc                      7.61%   45.65%     19.57%   16.30%   10.87% 100.00%
+                  p.row                         .        .          .        .        .       .
+                  p.col                         .        .          .        .        .       .
+            
+            
+            
+            
+            
+            
+            X2_System_Type_Population <- DescTools::Desc(System_Type_rev~Population_rev, bss_tidy_rev, digits=2, plotit = T)
+            
+            System_Type_rev ~ Population_rev (bss_tidy_rev)
+
+Summary: 
+n: 92, rows: 2, columns: 6
+
+Pearson's Chi-squared test:
+  X-squared = 2.0467, df = 5, p-value = 0.8426
+Log likelihood ratio (G-test) test of independence:
+  G = 2.5277, X-squared df = 5, p-value = 0.7723
+Mantel-Haenszel Chi-squared:
+  X-squared = 0.047176, df = 1, p-value = 0.8281
+
+Warning message:
+  Exp. counts < 5: Chi-squared approx. may be incorrect!!
+
+
+Phi-Coefficient        0.149
+Contingency Coeff.     0.148
+Cramer's V             0.149
+
+                                                                                                                                                 
+                  Population_rev   <=50k inhab   >50k=<100k inhab   >100k=<250k inhab   >250k=<500k inhab   >500k=<1Mi inhab   >1Mi inhab     Sum
+System_Type_rev                                                                                                                                  
+                                                                                                                                                 
+Dock Based        freq                       2                  2                   7                  15                  8           33      67
+                  perc                   2.17%              2.17%               7.61%              16.30%              8.70%       35.87%  72.83%
+                  p.row                  2.99%              2.99%              10.45%              22.39%             11.94%       49.25%       .
+                  p.col                 66.67%            100.00%              70.00%              78.95%             61.54%       73.33%       .
+                                                                                                                                                 
+Dockless          freq                       1                  0                   3                   4                  5           12      25
+                  perc                   1.09%              0.00%               3.26%               4.35%              5.43%       13.04%  27.17%
+                  p.row                  4.00%              0.00%              12.00%              16.00%             20.00%       48.00%       .
+                  p.col                 33.33%              0.00%              30.00%              21.05%             38.46%       26.67%       .
+                                                                                                                                                 
+Sum               freq                       3                  2                  10                  19                 13           45      92
+                  perc                   3.26%              2.17%              10.87%              20.65%             14.13%       48.91% 100.00%
+                  p.row                      .                  .                   .                   .                  .            .       .
+                  p.col                      .                  .                   .                   .                  .            .       .
+                                                                                                                                               
+            
+            
+            X2_System_Type_City_Pop_Group <-  DescTools::Desc(System_Type_rev~City_Pop_Group_rev, bss_tidy_rev, digits=2, plotit = T)
+            
+            System_Type_rev ~ City_Pop_Group_rev (bss_tidy_rev)
+
+Summary: 
+n: 92, rows: 2, columns: 5
+
+Pearson's Chi-squared test:
+  X-squared = 1.373, df = 4, p-value = 0.8489
+Log likelihood ratio (G-test) test of independence:
+  G = 1.3428, X-squared df = 4, p-value = 0.8541
+Mantel-Haenszel Chi-squared:
+  X-squared = 0.070523, df = 1, p-value = 0.7906
+
+Warning message:
+  Exp. counts < 5: Chi-squared approx. may be incorrect!!
+
+
+Phi-Coefficient        0.122
+Contingency Coeff.     0.121
+Cramer's V             0.122
+
+                                                                                                           
+                  City_Pop_Group_rev   Up to 100k   100k-250k   250k-500k   500k-1000k   Over 1000k     Sum
+System_Type_rev                                                                                            
+                                                                                                           
+Dock Based        freq                          4           7          15            8           33      67
+                  perc                      4.35%       7.61%      16.30%        8.70%       35.87%  72.83%
+                  p.row                     5.97%      10.45%      22.39%       11.94%       49.25%       .
+                  p.col                    80.00%      70.00%      78.95%       61.54%       73.33%       .
+                                                                                                           
+Dockless          freq                          1           3           4            5           12      25
+                  perc                      1.09%       3.26%       4.35%        5.43%       13.04%  27.17%
+                  p.row                     4.00%      12.00%      16.00%       20.00%       48.00%       .
+                  p.col                    20.00%      30.00%      21.05%       38.46%       26.67%       .
+                                                                                                           
+Sum               freq                          5          10          19           13           45      92
+                  perc                      5.43%      10.87%      20.65%       14.13%       48.91% 100.00%
+                  p.row                         .           .           .            .            .       .
+                  p.col                         .           .           .            .            .       .
+                                                                                                           
+
+            
+            
+            
+            X2_System_Type_OpType <- DescTools::Desc(System_Type_rev~Operator_Type_rev, bss_tidy_rev, digits=2, plotit = T) 
+            
+            
+            
+Summary: 
+n: 92, rows: 2, columns: 2
+
+Pearson's Chi-squared test (cont. adj):
+  X-squared = 0.013298, df = 1, p-value = 0.9082
+Fisher's exact test p-value = 0.7861
+McNemar's chi-squared = 0.25, df = 1, p-value = 0.6171
+
+                    estimate lwr.ci upr.ci'
+                                          
+odds ratio             0.797  0.258  2.466
+rel. risk (col1)       0.951  0.750  1.207
+rel. risk (col2)       1.194  0.489  2.916
+
+
+Phi-Coefficient        0.041
+Contingency Coeff.     0.041
+Cramer's V             0.041
+
+                                                              
+                  Operator_Type_rev   Private   Public     Sum
+System_Type_rev                                               
+                                                              
+Dock Based        freq                     51       16      67
+                  perc                 55.43%   17.39%  72.83%
+                  p.row                76.12%   23.88%       .
+                  p.col                71.83%   76.19%       .
+                                                              
+Dockless          freq                     20        5      25
+                  perc                 21.74%    5.43%  27.17%
+                  p.row                80.00%   20.00%       .
+                  p.col                28.17%   23.81%       .
+                                                              
+Sum               freq                     71       21      92
+                  perc                 77.17%   22.83% 100.00%
+                  p.row                     .        .       .
+                  p.col                     .        .       .
+                                                              
+
+----------
+' 95% conf. level
+
+
+            
+            X2_System_Type_SponsorSector_Group <- DescTools::Desc(System_Type_rev~SponsorSector_Group_rev, bss_tidy_rev, digits=2, plotit = T) 
+            
+            System_Type_rev ~ SponsorSector_Group_rev (bss_tidy_rev)
+
+Summary: 
+n: 92, rows: 2, columns: 5
+
+Pearson's Chi-squared test:
+  X-squared = 6.091, df = 4, p-value = 0.1925
+Log likelihood ratio (G-test) test of independence:
+  G = 6.2366, X-squared df = 4, p-value = 0.1822
+Mantel-Haenszel Chi-squared:
+  X-squared = 0.53908, df = 1, p-value = 0.4628
+
+Warning message:
+  Exp. counts < 5: Chi-squared approx. may be incorrect!!
+
+
+Phi-Coefficient        0.257
+Contingency Coeff.     0.249
+Cramer's V             0.257
+
+                                                                                                           
+                  SponsorSector_Group_rev   Financial   Government   Health   Joint venture   Other     Sum
+System_Type_rev                                                                                            
+                                                                                                           
+Dock Based        freq                             11           29        5              13       9      67
+                  perc                         11.96%       31.52%    5.43%          14.13%   9.78%  72.83%
+                  p.row                        16.42%       43.28%    7.46%          19.40%  13.43%       .
+                  p.col                        84.62%       76.32%   55.56%          59.09%  90.00%       .
+                                                                                                           
+Dockless          freq                              2            9        4               9       1      25
+                  perc                          2.17%        9.78%    4.35%           9.78%   1.09%  27.17%
+                  p.row                         8.00%       36.00%   16.00%          36.00%   4.00%       .
+                  p.col                        15.38%       23.68%   44.44%          40.91%  10.00%       .
+                                                                                                           
+Sum               freq                             13           38        9              22      10      92
+                  perc                         14.13%       41.30%    9.78%          23.91%  10.87% 100.00%
+                  p.row                             .            .        .               .       .       .
+                  p.col                             .            .        .               .       .       .
+                                                                                                           
+
+            
+      
+            
+            
+            X2_System_Type_Transit_Integration <- DescTools::Desc(System_Type_rev~Transit_Integration_rev, bss_tidy_rev, digits=2, plotit = T)
+            
+            System_Type_rev ~ Transit_Integration_rev (bss_tidy_rev)
+
+Summary: 
+n: 92, rows: 2, columns: 2
+
+Pearson's Chi-squared test (cont. adj):
+  X-squared = 0.59893, df = 1, p-value = 0.439
+Fisher's exact test p-value = 0.3533
+McNemar's chi-squared = 4.6875, df = 1, p-value = 0.03038
+
+                    estimate lwr.ci upr.ci'
+                                          
+odds ratio             0.615  0.239  1.586
+rel. risk (col1)       0.816  0.562  1.185
+rel. risk (col2)       1.327  0.743  2.368
+
+
+Phi-Coefficient        0.105
+Contingency Coeff.     0.105
+Cramer's V             0.105
+
+                                                                 
+                  Transit_Integration_rev      No     Yes     Sum
+System_Type_rev                                                  
+                                                                 
+Dock Based        freq                         35      32      67
+                  perc                     38.04%  34.78%  72.83%
+                  p.row                    52.24%  47.76%       .
+                  p.col                    68.63%  78.05%       .
+                                                                 
+Dockless          freq                         16       9      25
+                  perc                     17.39%   9.78%  27.17%
+                  p.row                    64.00%  36.00%       .
+                  p.col                    31.37%  21.95%       .
+                                                                 
+Sum               freq                         51      41      92
+                  perc                     55.43%  44.57% 100.00%
+                  p.row                         .       .       .
+                  p.col                         .       .       .
+                                                                 
+
+----------
+' 95% conf. level
+
+            
+            
+            
+            X2_System_Type_Fee <- DescTools::Desc(System_Type_rev~Fee_rev, bss_tidy_rev, digits=2, plotit = T) 
+            
+            System_Type_rev ~ Fee_rev (bss_tidy_rev)
+
+Summary: 
+n: 92, rows: 2, columns: 2
+
+Pearson's Chi-squared test (cont. adj):
+  X-squared = 0.20986, df = 1, p-value = 0.6469
+Fisher's exact test p-value = 0.6214
+McNemar's chi-squared = 24.5, df = 1, p-value = 7.431e-07
+
+                    estimate lwr.ci upr.ci'
+                                          
+odds ratio             1.435  0.525  3.924
+rel. risk (col1)       1.279  0.632  2.591
+rel. risk (col2)       0.891  0.658  1.207
+
+
+Phi-Coefficient        0.074
+Contingency Coeff.     0.073
+Cramer's V             0.074
+
+                                                 
+                  Fee_rev      No     Yes     Sum
+System_Type_rev                                  
+                                                 
+Dock Based        freq         24      43      67
+                  perc     26.09%  46.74%  72.83%
+                  p.row    35.82%  64.18%       .
+                  p.col    77.42%  70.49%       .
+                                                 
+Dockless          freq          7      18      25
+                  perc      7.61%  19.57%  27.17%
+                  p.row    28.00%  72.00%       .
+                  p.col    22.58%  29.51%       .
+                                                 
+Sum               freq         31      61      92
+                  perc     33.70%  66.30% 100.00%
+                  p.row         .       .       .
+                  p.col         .       .       .
+                                                 
+
+----------
+' 95% conf. level
+            
+            
+            X2_OpType_Countries_Group <- DescTools::Desc(Operator_Type_rev~ountries_Group_rev, bss_tidy_rev, digits=2, plotit = T)
+            
+            Operator_Type_rev ~ Countries_Group_rev (bss_tidy_rev)
+
+Summary: 
+n: 92, rows: 2, columns: 5
+
+Pearson's Chi-squared test:
+  X-squared = 24.384, df = 4, p-value = 6.69e-05
+Log likelihood ratio (G-test) test of independence:
+  G = 24.41, X-squared df = 4, p-value = 6.608e-05
+Mantel-Haenszel Chi-squared:
+  X-squared = 0.36451, df = 1, p-value = 0.546
+
+Warning message:
+  Exp. counts < 5: Chi-squared approx. may be incorrect!!
+
+
+Phi-Coefficient        0.515
+Contingency Coeff.     0.458
+Cramer's V             0.515
+
+                                                                                                 
+                    Countries_Group_rev   Argentina   Brazil   Colombia   Mexico   Others     Sum
+Operator_Type_rev                                                                                
+                                                                                                 
+Private             freq                          2       40         10       13        6      71
+                    perc                      2.17%   43.48%     10.87%   14.13%    6.52%  77.17%
+                    p.row                     2.82%   56.34%     14.08%   18.31%    8.45%       .
+                    p.col                    28.57%   95.24%     55.56%   86.67%   60.00%       .
+                                                                                                 
+Public              freq                          5        2          8        2        4      21
+                    perc                      5.43%    2.17%      8.70%    2.17%    4.35%  22.83%
+                    p.row                    23.81%    9.52%     38.10%    9.52%   19.05%       .
+                    p.col                    71.43%    4.76%     44.44%   13.33%   40.00%       .
+                                                                                                 
+Sum                 freq                          7       42         18       15       10      92
+                    perc                      7.61%   45.65%     19.57%   16.30%   10.87% 100.00%
+                    p.row                         .        .          .        .        .       .
+                    p.col                         .        .          .        .        .       .
+                                                                                                 
+
+            
+            
+            
+            X2_OpType_City_Pop_Group <- DescTools::Desc(Operator_Type_rev~City_Pop_Group_rev, bss_tidy_rev, digits=2, plotit = T)
+            
+            Operator_Type_rev ~ City_Pop_Group_rev (bss_tidy_rev)
+
+Summary: 
+n: 92, rows: 2, columns: 5
+
+Pearson's Chi-squared test:
+  X-squared = 12.12, df = 4, p-value = 0.01648
+Log likelihood ratio (G-test) test of independence:
+  G = 11.246, X-squared df = 4, p-value = 0.02394
+Mantel-Haenszel Chi-squared:
+  X-squared = 9.6388, df = 1, p-value = 0.001905
+
+Warning message:
+  Exp. counts < 5: Chi-squared approx. may be incorrect!!
+
+
+Phi-Coefficient        0.363
+Contingency Coeff.     0.341
+Cramer's V             0.363
+
+                                                                                                             
+                    City_Pop_Group_rev   Up to 100k   100k-250k   250k-500k   500k-1000k   Over 1000k     Sum
+Operator_Type_rev                                                                                            
+                                                                                                             
+Private             freq                          2           5          15            9           40      71
+                    perc                      2.17%       5.43%      16.30%        9.78%       43.48%  77.17%
+                    p.row                     2.82%       7.04%      21.13%       12.68%       56.34%       .
+                    p.col                    40.00%      50.00%      78.95%       69.23%       88.89%       .
+                                                                                                             
+Public              freq                          3           5           4            4            5      21
+                    perc                      3.26%       5.43%       4.35%        4.35%        5.43%  22.83%
+                    p.row                    14.29%      23.81%      19.05%       19.05%       23.81%       .
+                    p.col                    60.00%      50.00%      21.05%       30.77%       11.11%       .
+                                                                                                             
+Sum                 freq                          5          10          19           13           45      92
+                    perc                      5.43%      10.87%      20.65%       14.13%       48.91% 100.00%
+                    p.row                         .           .           .            .            .       .
+                    p.col                         .           .           .            .            .       .
+                                                                                                             
+
+            
+            
+            X2_OpType_SponsorSector_Group <- DescTools::Desc(Operator_Type_rev~SponsorSector_Group_rev, bss_tidy_rev, digits=2, plotit = T)
+            
+            Operator_Type_rev ~ SponsorSector_Group_rev (bss_tidy_rev)
+
+Summary: 
+n: 92, rows: 2, columns: 5
+
+Pearson's Chi-squared test:
+  X-squared = 28.988, df = 4, p-value = 7.86e-06
+Log likelihood ratio (G-test) test of independence:
+  G = 36.151, X-squared df = 4, p-value = 2.693e-07
+Mantel-Haenszel Chi-squared:
+  X-squared = 3.8099, df = 1, p-value = 0.05095
+
+Warning message:
+  Exp. counts < 5: Chi-squared approx. may be incorrect!!
+
+
+Phi-Coefficient        0.561
+Contingency Coeff.     0.489
+Cramer's V             0.561
+
+                                                                                                             
+                    SponsorSector_Group_rev   Financial   Government   Health   Joint venture   Other     Sum
+Operator_Type_rev                                                                                            
+                                                                                                             
+Private             freq                             13           19        9              22       8      71
+                    perc                         14.13%       20.65%    9.78%          23.91%   8.70%  77.17%
+                    p.row                        18.31%       26.76%   12.68%          30.99%  11.27%       .
+                    p.col                       100.00%       50.00%  100.00%         100.00%  80.00%       .
+                                                                                                             
+Public              freq                              0           19        0               0       2      21
+                    perc                          0.00%       20.65%    0.00%           0.00%   2.17%  22.83%
+                    p.row                         0.00%       90.48%    0.00%           0.00%   9.52%       .
+                    p.col                         0.00%       50.00%    0.00%           0.00%  20.00%       .
+                                                                                                             
+Sum                 freq                             13           38        9              22      10      92
+                    perc                         14.13%       41.30%    9.78%          23.91%  10.87% 100.00%
+                    p.row                             .            .        .               .       .       .
+                    p.col                             .            .        .               .       .       .
+                                                                                                             
+            
+            
+            X2_OpType_Transit_Integration <- DescTools::Desc(Operator_Type_rev~Transit_Integration_rev, bss_tidy_rev, digits=2, plotit = T)
+            Operator_Type_rev ~ Transit_Integration_rev (bss_tidy_rev)
+
+Summary: 
+n: 92, rows: 2, columns: 2
+
+Pearson's Chi-squared test (cont. adj):
+  X-squared = 9.42, df = 1, p-value = 0.002146
+Fisher's exact test p-value = 0.001144
+McNemar's chi-squared = 12.033, df = 1, p-value = 0.0005226
+
+                    estimate lwr.ci upr.ci'
+                                          
+odds ratio             5.888  1.929 17.975
+rel. risk (col1)       2.721  1.242  5.960
+rel. risk (col2)       0.462  0.311  0.687
+
+
+Phi-Coefficient        0.346
+Contingency Coeff.     0.327
+Cramer's V             0.346
+
+                                                                   
+                    Transit_Integration_rev      No     Yes     Sum
+Operator_Type_rev                                                  
+                                                                   
+Private             freq                         46      25      71
+                    perc                     50.00%  27.17%  77.17%
+                    p.row                    64.79%  35.21%       .
+                    p.col                    90.20%  60.98%       .
+                                                                   
+Public              freq                          5      16      21
+                    perc                      5.43%  17.39%  22.83%
+                    p.row                    23.81%  76.19%       .
+                    p.col                     9.80%  39.02%       .
+                                                                   
+Sum                 freq                         51      41      92
+                    perc                     55.43%  44.57% 100.00%
+                    p.row                         .       .       .
+                    p.col                         .       .       .
+                                               
+            
+            X2_OpType_Fee <- DescTools::Desc(Operator_Type_rev~Fee_rev, bss_tidy_rev, digits=2, plotit = T)
+            
+            Operator_Type_rev ~ Fee_rev (bss_tidy_rev)
+
+Summary: 
+n: 92, rows: 2, columns: 2
+
+Pearson's Chi-squared test (cont. adj):
+  X-squared = 19.598, df = 1, p-value = 9.555e-06
+Fisher's exact test p-value = 6.756e-06
+McNemar's chi-squared = 21.125, df = 1, p-value = 4.303e-06
+
+                    estimate lwr.ci upr.ci'
+                                          
+odds ratio            0.0837 0.0264 0.2656
+rel. risk (col1)      0.2773 0.1667 0.4613
+rel. risk (col2)      3.3127 1.5269 7.1869
+
+
+Phi-Coefficient        0.489
+Contingency Coeff.     0.439
+Cramer's V             0.489
+
+                                                   
+                    Fee_rev      No     Yes     Sum
+Operator_Type_rev                                  
+                                                   
+Private             freq         15      56      71
+                    perc     16.30%  60.87%  77.17%
+                    p.row    21.13%  78.87%       .
+                    p.col    48.39%  91.80%       .
+                                                   
+Public              freq         16       5      21
+                    perc     17.39%   5.43%  22.83%
+                    p.row    76.19%  23.81%       .
+                    p.col    51.61%   8.20%       .
+                                                   
+Sum                 freq         31      61      92
+                    perc     33.70%  66.30% 100.00%
+                    p.row         .       .       .
+                    p.col         .       .       .
+                                                   
+
+----------
+' 95% conf. level
+
+            
+            X2_SponsorSector_Group_Countries_Group <- DescTools::Desc(SponsorSector_Group_rev~Countries_Group_rev, bss_tidy_rev, digits=2, plotit = T)
+            
+            
+            SponsorSector_Group_rev ~ Countries_Group_rev (bss_tidy_rev)
+
+Summary: 
+n: 92, rows: 5, columns: 5
+
+Pearson's Chi-squared test:
+  X-squared = 48.999, df = 16, p-value = 3.305e-05
+Log likelihood ratio (G-test) test of independence:
+  G = 62.415, X-squared df = 16, p-value = 2.041e-07
+Mantel-Haenszel Chi-squared:
+  X-squared = 0.047107, df = 1, p-value = 0.8282
+
+Warning message:
+  Exp. counts < 5: Chi-squared approx. may be incorrect!!
+
+
+Phi-Coefficient        0.730
+Contingency Coeff.     0.590
+Cramer's V             0.365
+
+                                                                                                       
+                          Countries_Group_rev   Argentina   Brazil   Colombia   Mexico   Others     Sum
+SponsorSector_Group_rev                                                                                
+                                                                                                       
+Financial                 freq                          1       10          0        0        2      13
+                          perc                      1.09%   10.87%      0.00%    0.00%    2.17%  14.13%
+                          p.row                     7.69%   76.92%      0.00%    0.00%   15.38%       .
+                          p.col                    14.29%   23.81%      0.00%    0.00%   20.00%       .
+                                                                                                       
+Government                freq                          6        4         14        8        6      38
+                          perc                      6.52%    4.35%     15.22%    8.70%    6.52%  41.30%
+                          p.row                    15.79%   10.53%     36.84%   21.05%   15.79%       .
+                          p.col                    85.71%    9.52%     77.78%   53.33%   60.00%       .
+                                                                                                       
+Health                    freq                          0        9          0        0        0       9
+                          perc                      0.00%    9.78%      0.00%    0.00%    0.00%   9.78%
+                          p.row                     0.00%  100.00%      0.00%    0.00%    0.00%       .
+                          p.col                     0.00%   21.43%      0.00%    0.00%    0.00%       .
+                                                                                                       
+Joint venture             freq                          0       14          1        6        1      22
+                          perc                      0.00%   15.22%      1.09%    6.52%    1.09%  23.91%
+                          p.row                     0.00%   63.64%      4.55%   27.27%    4.55%       .
+                          p.col                     0.00%   33.33%      5.56%   40.00%   10.00%       .
+                                                                                                       
+Other                     freq                          0        5          3        1        1      10
+                          perc                      0.00%    5.43%      3.26%    1.09%    1.09%  10.87%
+                          p.row                     0.00%   50.00%     30.00%   10.00%   10.00%       .
+                          p.col                     0.00%   11.90%     16.67%    6.67%   10.00%       .
+                                                                                                       
+Sum                       freq                          7       42         18       15       10      92
+                          perc                      7.61%   45.65%     19.57%   16.30%   10.87% 100.00%
+                          p.row                         .        .          .        .        .       .
+                          p.col                         .        .          .        .        .       .
+                          
+                          
+            X2_SponsorSector_City_Pop_Group <- DescTools::Desc(SponsorSector_Group_rev~City_Pop_Group_rev, bss_tidy_rev, digits=2, plotit = T)
+            
+            SponsorSector_Group_rev ~ City_Pop_Group_rev (bss_tidy_rev)
+
+Summary: 
+n: 92, rows: 5, columns: 5
+
+Pearson's Chi-squared test:
+  X-squared = 18.917, df = 16, p-value = 0.273
+Log likelihood ratio (G-test) test of independence:
+  G = 23.248, X-squared df = 16, p-value = 0.1073
+Mantel-Haenszel Chi-squared:
+  X-squared = 0.072183, df = 1, p-value = 0.7882
+
+Warning message:
+  Exp. counts < 5: Chi-squared approx. may be incorrect!!
+
+
+Phi-Coefficient        0.453
+Contingency Coeff.     0.413
+Cramer's V             0.227
+
+                                                                                                                   
+                          City_Pop_Group_rev   Up to 100k   100k-250k   250k-500k   500k-1000k   Over 1000k     Sum
+SponsorSector_Group_rev                                                                                            
+                                                                                                                   
+Financial                 freq                          0           0           2            0           11      13
+                          perc                      0.00%       0.00%       2.17%        0.00%       11.96%  14.13%
+                          p.row                     0.00%       0.00%      15.38%        0.00%       84.62%       .
+                          p.col                     0.00%       0.00%      10.53%        0.00%       24.44%       .
+                                                                                                                   
+Government                freq                          3           8           8            7           12      38
+                          perc                      3.26%       8.70%       8.70%        7.61%       13.04%  41.30%
+                          p.row                     7.89%      21.05%      21.05%       18.42%       31.58%       .
+                          p.col                    60.00%      80.00%      42.11%       53.85%       26.67%       .
+                                                                                                                   
+Health                    freq                          0           0           2            1            6       9
+                          perc                      0.00%       0.00%       2.17%        1.09%        6.52%   9.78%
+                          p.row                     0.00%       0.00%      22.22%       11.11%       66.67%       .
+                          p.col                     0.00%       0.00%      10.53%        7.69%       13.33%       .
+                                                                                                                   
+Joint venture             freq                          1           1           4            4           12      22
+                          perc                      1.09%       1.09%       4.35%        4.35%       13.04%  23.91%
+                          p.row                     4.55%       4.55%      18.18%       18.18%       54.55%       .
+                          p.col                    20.00%      10.00%      21.05%       30.77%       26.67%       .
+                                                                                                                   
+Other                     freq                          1           1           3            1            4      10
+                          perc                      1.09%       1.09%       3.26%        1.09%        4.35%  10.87%
+                          p.row                    10.00%      10.00%      30.00%       10.00%       40.00%       .
+                          p.col                    20.00%      10.00%      15.79%        7.69%        8.89%       .
+                                                                                                                   
+Sum                       freq                          5          10          19           13           45      92
+                          perc                      5.43%      10.87%      20.65%       14.13%       48.91% 100.00%
+                          p.row                         .           .           .            .            .       .
+                          p.col                         .           .           .            .            .       .
+                                                                                                                   
+            
+            
+            
+            X2_SponsorSector_Transit_Integration <- DescTools::Desc(SponsorSector_Group_rev~Transit_Integration_rev, bss_tidy_rev, digits=2, plotit = T)
+            
+            SponsorSector_Group_rev ~ Transit_Integration_rev (bss_tidy_rev)
+
+Summary: 
+n: 92, rows: 5, columns: 2
+
+Pearson's Chi-squared test:
+  X-squared = 25.852, df = 4, p-value = 3.39e-05
+Log likelihood ratio (G-test) test of independence:
+  G = 28.356, X-squared df = 4, p-value = 1.057e-05
+Mantel-Haenszel Chi-squared:
+  X-squared = 2.3072, df = 1, p-value = 0.1288
+
+Warning message:
+  Exp. counts < 5: Chi-squared approx. may be incorrect!!
+
+
+Phi-Coefficient        0.530
+Contingency Coeff.     0.468
+Cramer's V             0.530
+
+                                                                         
+                          Transit_Integration_rev      No     Yes     Sum
+SponsorSector_Group_rev                                                  
+                                                                         
+Financial                 freq                         10       3      13
+                          perc                     10.87%   3.26%  14.13%
+                          p.row                    76.92%  23.08%       .
+                          p.col                    19.61%   7.32%       .
+                                                                         
+Government                freq                         11      27      38
+                          perc                     11.96%  29.35%  41.30%
+                          p.row                    28.95%  71.05%       .
+                          p.col                    21.57%  65.85%       .
+                                                                         
+Health                    freq                          6       3       9
+                          perc                      6.52%   3.26%   9.78%
+                          p.row                    66.67%  33.33%       .
+                          p.col                    11.76%   7.32%       .
+                                                                         
+Joint venture             freq                         20       2      22
+                          perc                     21.74%   2.17%  23.91%
+                          p.row                    90.91%   9.09%       .
+                          p.col                    39.22%   4.88%       .
+                                                                         
+Other                     freq                          4       6      10
+                          perc                      4.35%   6.52%  10.87%
+                          p.row                    40.00%  60.00%       .
+                          p.col                     7.84%  14.63%       .
+                                                                         
+Sum                       freq                         51      41      92
+                          perc                     55.43%  44.57% 100.00%
+                          p.row                         .       .       .
+                          p.col                         .       .       .
+                                                                         
+
+> 
+            
+            
+            
+            X2_SponsorSector_Fee <- DescTools::Desc(SponsorSector_Group_rev~Fee_rev, bss_tidy_rev, digits=2, plotit = T)
+            
+            SponsorSector_Group_rev ~ Fee_rev (bss_tidy_rev)
+
+Summary: 
+n: 92, rows: 5, columns: 2
+
+Pearson's Chi-squared test:
+  X-squared = 28.243, df = 4, p-value = 1.113e-05
+Log likelihood ratio (G-test) test of independence:
+  G = 34.946, X-squared df = 4, p-value = 4.766e-07
+Mantel-Haenszel Chi-squared:
+  X-squared = 1.3091, df = 1, p-value = 0.2526
+
+Warning message:
+  Exp. counts < 5: Chi-squared approx. may be incorrect!!
+
+
+Phi-Coefficient        0.554
+Contingency Coeff.     0.485
+Cramer's V             0.554
+
+                                                         
+                          Fee_rev      No     Yes     Sum
+SponsorSector_Group_rev                                  
+                                                         
+Financial                 freq          2      11      13
+                          perc      2.17%  11.96%  14.13%
+                          p.row    15.38%  84.62%       .
+                          p.col     6.45%  18.03%       .
+                                                         
+Government                freq         22      16      38
+                          perc     23.91%  17.39%  41.30%
+                          p.row    57.89%  42.11%       .
+                          p.col    70.97%  26.23%       .
+                                                         
+Health                    freq          1       8       9
+                          perc      1.09%   8.70%   9.78%
+                          p.row    11.11%  88.89%       .
+                          p.col     3.23%  13.11%       .
+                                                         
+Joint venture             freq          0      22      22
+                          perc      0.00%  23.91%  23.91%
+                          p.row     0.00% 100.00%       .
+                          p.col     0.00%  36.07%       .
+                                                         
+Other                     freq          6       4      10
+                          perc      6.52%   4.35%  10.87%
+                          p.row    60.00%  40.00%       .
+                          p.col    19.35%   6.56%       .
+                                                         
+Sum                       freq         31      61      92
+                          perc     33.70%  66.30% 100.00%
+                          p.row         .       .       .
+                          p.col         .       .       .
+                                                         
+
+            
+            X2_Transit_Integration_Fee <- DescTools::Desc(Transit_Integration_rev~Fee_rev, bss_tidy_rev, digits=2, plotit = T)
+            
+            Transit_Integration_rev ~ Fee_rev (bss_tidy_rev)
+
+Summary: 
+n: 92, rows: 2, columns: 2
+
+Pearson's Chi-squared test (cont. adj):
+  X-squared = 31.687, df = 1, p-value = 1.811e-08
+Fisher's exact test p-value = 4.682e-09
+McNemar's chi-squared = 4.8784, df = 1, p-value = 0.0272
+
+                    estimate lwr.ci upr.ci'
+                                          
+odds ratio            0.0441 0.0132 0.1477
+rel. risk (col1)      0.1191 0.0453 0.3130
+rel. risk (col2)      2.6989 1.7512 4.1595
+
+
+Phi-Coefficient        0.610
+Contingency Coeff.     0.521
+Cramer's V             0.610
+
+                                                         
+                          Fee_rev      No     Yes     Sum
+Transit_Integration_rev                                  
+                                                         
+No                        freq          4      47      51
+                          perc      4.35%  51.09%  55.43%
+                          p.row     7.84%  92.16%       .
+                          p.col    12.90%  77.05%       .
+                                                         
+Yes                       freq         27      14      41
+                          perc     29.35%  15.22%  44.57%
+                          p.row    65.85%  34.15%       .
+                          p.col    87.10%  22.95%       .
+                                                         
+Sum                       freq         31      61      92
+                          perc     33.70%  66.30% 100.00%
+                          p.row         .       .       .
+                          p.col         .       .       .
+                                                         
+
+----------
+' 95% conf. level

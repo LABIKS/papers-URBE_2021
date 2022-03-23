@@ -1,0 +1,173 @@
+> annex_stat_a <- DescTools::Desc(bss_tidy_rev, digits=2, plotit = T)
+> annex_stat_a 
+------------------------------------------------------------------------------------------------------------------------------------------------- 
+Describe bss_tidy_rev (tbl_df, tbl, data.frame):
+
+data frame:	92 obs. of  10 variables
+		92 complete cases (100.0%)
+
+  Nr  ColName                  Class            NAs  Levels                                                                           
+  1   Name_System_rev          character        .                                                                                     
+  2   Country_rev              factor           .    (11): 1-Argentina, 2-Brazil, 3-Chile, 4-Colombia, 5-Costa Rica, ...              
+  3   Countries_Group_rev      factor           .    (5): 1-Argentina, 2-Brazil, 3-Colombia, 4-Mexico, 5-Others                       
+  4   Population_rev           ordered, factor  .    (6): 1-<=50k inhab, 2->50k=<100k inhab, 3->100k=<250k inhab, 4->250k=<500k inhab,
+                                                     5->500k=<1Mi inhab, ...                                                          
+  5   City_Pop_Group_rev       ordered, factor  .    (5): 1-Up to 100k, 2-100k-250k, 3-250k-500k, 4-500k-1000k, 5-Over 1000k          
+  6   System_Type_rev          factor           .    (2): 1-Dock Based, 2-Dockless                                                    
+  7   Operator_Type_rev        factor           .    (2): 1-Private, 2-Public                                                         
+  8   SponsorSector_Group_rev  factor           .    (5): 1-Financial, 2-Government, 3-Health, 4-Joint venture, 5-Other               
+  9   Transit_Integration_rev  factor           .    (2): 1-No, 2-Yes                                                                 
+  10  Fee_rev                  factor           .    (2): 1-No, 2-Yes                                                                 
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------- 
+1 - Name_System_rev (character)
+
+  length      n    NAs unique levels  dupes
+      92     92      0     79     79      y
+         100.0%   0.0%                     
+
+                     level  freq    perc  cumfreq  cumperc
+1                   Yellow    11  11.96%       11   11.96%
+2                Loop Bike     2   2.17%       13   14.13%
+3                   Mobike     2   2.17%       15   16.30%
+4            Muévete Chilo     2   2.17%       17   18.48%
+5                 Asu Viva     1   1.09%       18   19.57%
+6                BAEcobici     1   1.09%       19   20.65%
+7                    Bbike     1   1.09%       20   21.74%
+8                 Bici-Río     1   1.09%       21   22.83%
+9          Bici Las condes     1   1.09%       22   23.91%
+10     Bicicleta Integrada     1   1.09%       23   25.00%
+11              Bicicletar     1   1.09%       24   26.09%
+12  Bicicletar Cooporativo     1   1.09%       25   27.17%
+... etc.
+ [list output truncated]
+
+------------------------------------------------------------------------------------------------------------------------------------------------- 
+2 - Country_rev (factor)
+
+  length      n    NAs unique levels  dupes
+      92     92      0     11     11      y
+         100.0%   0.0%                     
+
+         level  freq    perc  cumfreq  cumperc
+1       Brazil    42  45.65%       42   45.65%
+2     Colombia    18  19.57%       60   65.22%
+3       Mexico    15  16.30%       75   81.52%
+4    Argentina     7   7.61%       82   89.13%
+5        Chile     3   3.26%       85   92.39%
+6      Ecuador     2   2.17%       87   94.57%
+7   Costa Rica     1   1.09%       88   95.65%
+8         Cuba     1   1.09%       89   96.74%
+9     Paraguay     1   1.09%       90   97.83%
+10        Peru     1   1.09%       91   98.91%
+11   Venezuela     1   1.09%       92  100.00%
+
+------------------------------------------------------------------------------------------------------------------------------------------------- 
+3 - Countries_Group_rev (factor)
+
+  length      n    NAs unique levels  dupes
+      92     92      0      5      5      y
+         100.0%   0.0%                     
+
+       level  freq    perc  cumfreq  cumperc
+1     Brazil    42  45.65%       42   45.65%
+2   Colombia    18  19.57%       60   65.22%
+3     Mexico    15  16.30%       75   81.52%
+4     Others    10  10.87%       85   92.39%
+5  Argentina     7   7.61%       92  100.00%
+
+------------------------------------------------------------------------------------------------------------------------------------------------- 
+4 - Population_rev (ordered, factor)
+
+  length      n    NAs unique levels  dupes
+      92     92      0      6      6      y
+         100.0%   0.0%                     
+
+               level  freq    perc  cumfreq  cumperc
+1        <=50k inhab     3   3.26%        3    3.26%
+2   >50k=<100k inhab     2   2.17%        5    5.43%
+3  >100k=<250k inhab    10  10.87%       15   16.30%
+4  >250k=<500k inhab    19  20.65%       34   36.96%
+5   >500k=<1Mi inhab    13  14.13%       47   51.09%
+6         >1Mi inhab    45  48.91%       92  100.00%
+
+------------------------------------------------------------------------------------------------------------------------------------------------- 
+5 - City_Pop_Group_rev (ordered, factor)
+
+  length      n    NAs unique levels  dupes
+      92     92      0      5      5      y
+         100.0%   0.0%                     
+
+        level  freq    perc  cumfreq  cumperc
+1  Up to 100k     5   5.43%        5    5.43%
+2   100k-250k    10  10.87%       15   16.30%
+3   250k-500k    19  20.65%       34   36.96%
+4  500k-1000k    13  14.13%       47   51.09%
+5  Over 1000k    45  48.91%       92  100.00%
+
+------------------------------------------------------------------------------------------------------------------------------------------------- 
+6 - System_Type_rev (factor - dichotomous)
+
+  length      n    NAs unique
+      92     92      0      2
+         100.0%   0.0%       
+
+            freq    perc  lci.95  uci.95'
+Dock Based    67  72.83%  62.96%  80.86%
+Dockless      25  27.17%  19.14%  37.04%
+
+' 95%-CI (Wilson)
+
+------------------------------------------------------------------------------------------------------------------------------------------------- 
+7 - Operator_Type_rev (factor - dichotomous)
+
+  length      n    NAs unique
+      92     92      0      2
+         100.0%   0.0%       
+
+         freq    perc  lci.95  uci.95'
+Private    71  77.17%  67.61%  84.56%
+Public     21  22.83%  15.44%  32.39%
+
+' 95%-CI (Wilson)
+
+------------------------------------------------------------------------------------------------------------------------------------------------- 
+8 - SponsorSector_Group_rev (factor)
+
+  length      n    NAs unique levels  dupes
+      92     92      0      5      5      y
+         100.0%   0.0%                     
+
+           level  freq    perc  cumfreq  cumperc
+1     Government    38  41.30%       38   41.30%
+2  Joint venture    22  23.91%       60   65.22%
+3      Financial    13  14.13%       73   79.35%
+4          Other    10  10.87%       83   90.22%
+5         Health     9   9.78%       92  100.00%
+
+------------------------------------------------------------------------------------------------------------------------------------------------- 
+9 - Transit_Integration_rev (factor - dichotomous)
+
+  length      n    NAs unique
+      92     92      0      2
+         100.0%   0.0%       
+
+     freq    perc  lci.95  uci.95'
+No     51  55.43%  45.26%  65.17%
+Yes    41  44.57%  34.83%  54.74%
+
+' 95%-CI (Wilson)
+
+------------------------------------------------------------------------------------------------------------------------------------------------- 
+10 - Fee_rev (factor - dichotomous)
+
+  length      n    NAs unique
+      92     92      0      2
+         100.0%   0.0%       
+
+     freq    perc  lci.95  uci.95'
+No     31  33.70%  24.86%  43.83%
+Yes    61  66.30%  56.17%  75.14%
+
+' 95%-CI (Wilson)

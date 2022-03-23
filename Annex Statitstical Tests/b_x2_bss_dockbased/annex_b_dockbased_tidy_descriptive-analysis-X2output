@@ -1,0 +1,149 @@
+# A tibble: 67 x 8
+   Name_System_rev     Countries_Group_rev City_Pop_Group_rev System_Type_rev Operator_Type_rev SponsorSector_Group_~ Transit_Integration_~ Fee_rev
+   <chr>               <fct>               <ord>              <fct>           <fct>             <fct>                 <fct>                 <fct>  
+ 1 BAEcobici           Others              500k-1000k         Dock Based      Public            Other                 Yes                   No     
+ 2 Bicis RGL           Argentina           Over 1000k         Dock Based      Private           Financial             Yes                   No     
+ 3 Biciudad            Brazil              100k-250k          Dock Based      Public            Government            Yes                   Yes    
+ 4 En La Bici          Others              Over 1000k         Dock Based      Private           Government            No                    Yes    
+ 5 Las Bicis           Brazil              Over 1000k         Dock Based      Private           Other                 Yes                   No     
+ 6 Mi Bici Tu Bici     Brazil              Over 1000k         Dock Based      Private           Health                Yes                   Yes    
+ 7 SiBici              Brazil              Over 1000k         Dock Based      Private           Government            Yes                   Yes    
+ 8 Bbike               Colombia            Up to 100k         Dock Based      Public            Government            Yes                   No     
+ 9 Bicicleta Integrada Colombia            100k-250k          Dock Based      Public            Government            Yes                   No     
+10 Bicicletar          Colombia            500k-1000k         Dock Based      Public            Government            No                    No     
+# ... with 57 more rows
+> annex_stat_b <- DescTools::Desc(dockbased_tidy_rev, digits=2, plotit = T)
+> annex_stat_b
+------------------------------------------------------------------------------------------------------------------------------------------------- 
+Describe dockbased_tidy_rev (tbl_df, tbl, data.frame):
+
+data frame:	67 obs. of  8 variables
+		67 complete cases (100.0%)
+
+  Nr  ColName                  Class            NAs  Levels                                                                 
+  1   Name_System_rev          character        .                                                                           
+  2   Countries_Group_rev      factor           .    (5): 1-Argentina, 2-Brazil, 3-Colombia, 4-Mexico, 5-Others             
+  3   City_Pop_Group_rev       ordered, factor  .    (5): 1-Up to 100k, 2-100k-250k, 3-250k-500k, 4-500k-1000k, 5-Over 1000k
+  4   System_Type_rev          factor           .    (2): 1-Dock Based, 2-Dockless                                          
+  5   Operator_Type_rev        factor           .    (2): 1-Private, 2-Public                                               
+  6   SponsorSector_Group_rev  factor           .    (5): 1-Financial, 2-Government, 3-Health, 4-Joint venture, 5-Other     
+  7   Transit_Integration_rev  factor           .    (2): 1-No, 2-Yes                                                       
+  8   Fee_rev                  factor           .    (2): 1-No, 2-Yes                                                       
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------- 
+1 - Name_System_rev (character)
+
+  length      n    NAs unique levels  dupes
+      67     67      0     67     67      n
+         100.0%   0.0%                     
+
+                              level  freq   perc  cumfreq  cumperc
+1                          Asu Viva     1  1.49%        1    1.49%
+2                         BAEcobici     1  1.49%        2    2.99%
+3                             Bbike     1  1.49%        3    4.48%
+4                          Bici-Río     1  1.49%        4    5.97%
+5                   Bici Las condes     1  1.49%        5    7.46%
+6               Bicicleta Integrada     1  1.49%        6    8.96%
+7                        Bicicletar     1  1.49%        7   10.45%
+8            Bicicletar Cooporativo     1  1.49%        8   11.94%
+9     Bicicletas publicas de Cajicá     1  1.49%        9   13.43%
+10      Bicicletas Públicas de Chiá     1  1.49%       10   14.93%
+11    Bicicletas Públicas de Ibagué     1  1.49%       11   16.42%
+12  Bicicletas Publicas de Quimbaya     1  1.49%       12   17.91%
+... etc.
+ [list output truncated]
+
+------------------------------------------------------------------------------------------------------------------------------------------------- 
+2 - Countries_Group_rev (factor)
+
+  length      n    NAs unique levels  dupes
+      67     67      0      5      5      y
+         100.0%   0.0%                     
+
+       level  freq    perc  cumfreq  cumperc
+1     Brazil    28  41.79%       28   41.79%
+2   Colombia    14  20.90%       42   62.69%
+3     Mexico    11  16.42%       53   79.10%
+4     Others     8  11.94%       61   91.04%
+5  Argentina     6   8.96%       67  100.00%
+
+------------------------------------------------------------------------------------------------------------------------------------------------- 
+3 - City_Pop_Group_rev (ordered, factor)
+
+  length      n    NAs unique levels  dupes
+      67     67      0      5      5      y
+         100.0%   0.0%                     
+
+        level  freq    perc  cumfreq  cumperc
+1  Up to 100k     4   5.97%        4    5.97%
+2   100k-250k     7  10.45%       11   16.42%
+3   250k-500k    15  22.39%       26   38.81%
+4  500k-1000k     8  11.94%       34   50.75%
+5  Over 1000k    33  49.25%       67  100.00%
+
+------------------------------------------------------------------------------------------------------------------------------------------------- 
+4 - System_Type_rev (factor - dichotomous)
+
+  length      n    NAs unique
+      67     67      0      1
+         100.0%   0.0%       
+
+            freq     perc  lci.95   uci.95'
+Dock Based    67  100.00%  94.58%  100.00%
+Dockless       0    0.00%   0.00%    5.42%
+
+' 95%-CI (Wilson)
+
+------------------------------------------------------------------------------------------------------------------------------------------------- 
+5 - Operator_Type_rev (factor - dichotomous)
+
+  length      n    NAs unique
+      67     67      0      2
+         100.0%   0.0%       
+
+         freq    perc  lci.95  uci.95'
+Private    51  76.12%  64.67%  84.73%
+Public     16  23.88%  15.27%  35.33%
+
+' 95%-CI (Wilson)
+
+------------------------------------------------------------------------------------------------------------------------------------------------- 
+6 - SponsorSector_Group_rev (factor)
+
+  length      n    NAs unique levels  dupes
+      67     67      0      5      5      y
+         100.0%   0.0%                     
+
+           level  freq    perc  cumfreq  cumperc
+1     Government    29  43.28%       29   43.28%
+2  Joint venture    13  19.40%       42   62.69%
+3      Financial    11  16.42%       53   79.10%
+4          Other     9  13.43%       62   92.54%
+5         Health     5   7.46%       67  100.00%
+
+------------------------------------------------------------------------------------------------------------------------------------------------- 
+7 - Transit_Integration_rev (factor - dichotomous)
+
+  length      n    NAs unique
+      67     67      0      2
+         100.0%   0.0%       
+
+     freq    perc  lci.95  uci.95'
+No     35  52.24%  40.49%  63.75%
+Yes    32  47.76%  36.25%  59.51%
+
+' 95%-CI (Wilson)
+
+------------------------------------------------------------------------------------------------------------------------------------------------- 
+8 - Fee_rev (factor - dichotomous)
+
+  length      n    NAs unique
+      67     67      0      2
+         100.0%   0.0%       
+
+     freq    perc  lci.95  uci.95'
+No     24  35.82%  25.40%  47.78%
+Yes    43  64.18%  52.22%  74.60%
+
+' 95%-CI (Wilson)
