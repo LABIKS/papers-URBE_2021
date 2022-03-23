@@ -1,0 +1,93 @@
+Name_System;Country;Population;City_Pop_Group;Countries_Group;System_Type;Operator_Type;SponsorSector_Group;Transit_Integration;Fee
+Asu Viva;Paraguay;>500k=<1Mi inhab;500k-1000k;Others;Dock Based;Public;Other;Yes;No
+BAEcobici;Argentina;>1Mi inhab;Over 1000k;Argentina;Dock Based;Private;Financial;Yes;No
+Bbike;Brasil;>100k=<250k inhab;100k-250k;Brazil;Dock Based;Public;Government;Yes;Yes
+Bici Las condes;Chile;>1Mi inhab;Over 1000k;Others;Dock Based;Private;Government;No;Yes
+Bicicleta Integrada;Brasil;>1Mi inhab;Over 1000k;Brazil;Dock Based;Private;Other;Yes;No
+Bicicletar;Brasil;>1Mi inhab;Over 1000k;Brazil;Dock Based;Private;Health;Yes;Yes
+Bicicletar Cooporativo;Brasil;>1Mi inhab;Over 1000k;Brazil;Dock Based;Private;Government;Yes;Yes
+Bicicletas publicas de Cajicá;Colombia;>50k=<100k inhab;Up to 100k;Colombia;Dock Based;Public;Government;Yes;No
+Bicicletas Públicas de Chiá;Colombia;>100k=<250k inhab;100k-250k;Colombia;Dock Based;Public;Government;Yes;No
+Bicicletas Públicas de Ibagué;Colombia;>500k=<1Mi inhab;500k-1000k;Colombia;Dock Based;Public;Government;No;No
+Bicicletas Publicas de Quimbaya;Colombia;<=50k inhab;Up to 100k;Colombia;Dock Based;Public;Government;Yes;No
+Bicicletas publicas de Zipaquirá;Colombia;>100k=<250k inhab;100k-250k;Colombia;Dock Based;Public;Government;Yes;No
+BiciCo;Colombia;>1Mi inhab;Over 1000k;Colombia;Dock Based;Private;Other;No;Yes
+BiciCuenca;Ecuador;>500k=<1Mi inhab;500k-1000k;Others;Dock Based;Private;Government;No;Yes
+BiciEstación;Colombia;>1Mi inhab;Over 1000k;Colombia;Dock Based;Private;Other;Yes;No
+BiciLeón;México;>1Mi inhab;Over 1000k;Mexico;Dockless;Private;Government;No;Yes
+BiciPlaya;México;>100k=<250k inhab;100k-250k;Mexico;Dock Based;Private;Government;No;Yes
+BiciQuito;Ecuador;>1Mi inhab;Over 1000k;Others;Dock Based;Public;Government;No;No
+Bici-Río;Colombia;>100k=<250k inhab;100k-250k;Colombia;Dock Based;Private;Government;Yes;No
+Bicis RGL;Argentina;>50k=<100k inhab;Up to 100k;Argentina;Dock Based;Public;Government;Yes;No
+Biciudad;Argentina;>100k=<250k inhab;100k-250k;Argentina;Dock Based;Public;Government;Yes;No
+Bike Belém;Brasil;>1Mi inhab;Over 1000k;Brazil;Dock Based;Private;Health;No;Yes
+Bike BH;Brasil;>1Mi inhab;Over 1000k;Brazil;Dock Based;Private;Health;No;Yes
+Bike PE;Brasil;>1Mi inhab;Over 1000k;Brazil;Dock Based;Private;Financial;No;Yes
+Bike POA;Brasil;>1Mi inhab;Over 1000k;Brazil;Dock Based;Private;Financial;No;Yes
+Bike Rio;Brasil;>1Mi inhab;Over 1000k;Brazil;Dock Based;Private;Financial;No;Yes
+Bike Salvador;Brasil;>1Mi inhab;Over 1000k;Brazil;Dock Based;Private;Financial;Yes;Yes
+Bike Sampa;Brasil;>1Mi inhab;Over 1000k;Brazil;Dock Based;Private;Financial;Yes;Yes
+Bike Sanja;Brasil;>500k=<1Mi inhab;500k-1000k;Brazil;Dockless;Private;Joint venture;No;Yes
+Bike Santos;Brasil;>250k=<500k inhab;250k-500k;Brazil;Dock Based;Private;Health;Yes;Yes
+Bike Serra;Brasil;>250k=<500k inhab;250k-500k;Brazil;Dock Based;Private;Financial;No;Yes
+Bike Vitória;Brasil;>250k=<500k inhab;250k-500k;Brazil;Dock Based;Private;Other;No;Yes
+BikePel;Brasil;>250k=<500k inhab;250k-500k;Brazil;Dock Based;Private;Health;No;Yes
+BikeSantiago;Chile;>1Mi inhab;Over 1000k;Others;Dock Based;Private;Financial;No;Yes
+BikeVV;Brasil;>250k=<500k inhab;250k-500k;Brazil;Dock Based;Private;Other;No;Yes
+Bisinu;Colombia;>250k=<500k inhab;250k-500k;Colombia;Dock Based;Private;Government;Yes;No
+Caracas Rueda Libre;Venezuela;>1Mi inhab;Over 1000k;Others;Dock Based;Public;Government;Yes;No
+Ciclo Sampa;Brasil;>1Mi inhab;Over 1000k;Brazil;Dock Based;Private;Financial;No;No
+City Bike Lima;Peru;>1Mi inhab;Over 1000k;Others;Dock Based;Private;Government;Yes;Yes
+Dezba;México;>1Mi inhab;Over 1000k;Mexico;Dockless;Private;Joint venture;No;Yes
+EcoBici CDMX;México;>1Mi inhab;Over 1000k;Mexico;Dock Based;Private;Government;Yes;Yes
+Ecobike;Brasil;>100k=<250k inhab;100k-250k;Brazil;Dock Based;Public;Other;Yes;No
+En La Bici;Argentina;>1Mi inhab;Over 1000k;Argentina;Dock Based;Public;Government;Yes;No
+EnCicla;Colombia;>1Mi inhab;Over 1000k;Colombia;Dock Based;Private;Government;Yes;No
+GynDeBike;Brasil;>1Mi inhab;Over 1000k;Brazil;Dock Based;Private;Health;No;Yes
+GynDeBike Kids;Brasil;>1Mi inhab;Over 1000k;Brazil;Dock Based;Private;Health;No;Yes
+Habici;Cuba;>1Mi inhab;Over 1000k;Others;Dock Based;Public;Government;No;Yes
+Huizi;México;>500k=<1Mi inhab;500k-1000k;Mexico;Dock Based;Public;Government;No;Yes
+IntegraBike;Brasil;>500k=<1Mi inhab;500k-1000k;Brazil;Dock Based;Private;Government;Yes;No
+JUMP;México;>1Mi inhab;Over 1000k;Mexico;Dockless;Private;Joint venture;No;Yes
+Las Bicis;Argentina;>100k=<250k inhab;100k-250k;Argentina;Dock Based;Private;Government;No;Yes
+Loop Bike;Brasil;<=50k inhab;Up to 100k;Brazil;Dockless;Private;Joint venture;No;Yes
+Loop Bike;Brasil;>1Mi inhab;Over 1000k;Brazil;Dockless;Private;Joint venture;No;Yes
+Mais Bike;Brasil;>1Mi inhab;Over 1000k;Brazil;Dock Based;Private;Financial;No;Yes
+Mais Bike Kids;Brasil;>1Mi inhab;Over 1000k;Brazil;Dock Based;Private;Financial;No;Yes
+Manizales en Bici;Colombia;>250k=<500k inhab;250k-500k;Colombia;Dock Based;Private;Government;Yes;No
+Megabici;Colombia;>250k=<500k inhab;250k-500k;Colombia;Dock Based;Private;Government;Yes;No
+Metrobici;Colombia;>500k=<1Mi inhab;500k-1000k;Colombia;Dock Based;Private;Government;Yes;No
+Mi Bici;México;>1Mi inhab;Over 1000k;Mexico;Dock Based;Private;Government;Yes;Yes
+Mi Bici Tu Bici;Argentina;>1Mi inhab;Over 1000k;Argentina;Dock Based;Public;Government;Yes;Yes
+Mini Bicicletar;Brasil;>1Mi inhab;Over 1000k;Brazil;Dock Based;Private;Health;Yes;Yes
+Mobike;Chile;>1Mi inhab;Over 1000k;Others;Dockless;Private;Joint venture;Yes;Yes
+Mobike;México;>1Mi inhab;Over 1000k;Mexico;Dockless;Private;Joint venture;No;Yes
+Muévete Chilo;México;>250k=<500k inhab;250k-500k;Mexico;Dockless;Private;Government;No;Yes
+Muévete Chilo;México;>250k=<500k inhab;250k-500k;Mexico;Dockless;Private;Joint venture;No;Yes
+Muvo;Colombia;>1Mi inhab;Over 1000k;Colombia;Dockless;Private;Joint venture;No;Yes
+Omni;Costa Rica;>250k=<500k inhab;250k-500k;Others;Dockless;Private;Financial;No;Yes
+Pachuca en Bici;México;>250k=<500k inhab;250k-500k;Mexico;Dock Based;Public;Government;No;Yes
+Passo Fundo Vai de Bici;Brasil;>100k=<250k inhab;100k-250k;Brazil;Dock Based;Private;Government;Yes;No
+Programa Bicicletas Públicas;Colombia;>250k=<500k inhab;250k-500k;Colombia;Dock Based;Private;Other;Yes;No
+Programa de Bicicletas Públicas;Colombia;>250k=<500k inhab;250k-500k;Colombia;Dock Based;Public;Government;Yes;No
+QroBici;México;>500k=<1Mi inhab;500k-1000k;Mexico;Dock Based;Private;Government;Yes;Yes
+Ride Vetelia;México;>500k=<1Mi inhab;500k-1000k;Mexico;Dockless;Private;Joint venture;Yes;Yes
+RiviBike;Brasil;<=50k inhab;Up to 100k;Brazil;Dock based;Private;Other;Yes;No
+Salvador vai de bike (Azulzinhas);Brasil;>1Mi inhab;Over 1000k;Brazil;Dock Based;Private;Financial;No;Yes
+SiBici;Argentina;>500k=<1Mi inhab;500k-1000k;Argentina;Dock Based;Public;Government;Yes;No
+Unimed Bike-JF;Brasil;>500k=<1Mi inhab;500k-1000k;Brazil;Dock Based;Private;Health;No;No
+Urban Bici;México;>1Mi inhab;Over 1000k;Mexico;Dock Based;Private;Other;No;Yes
+Valledupar Avanza en Bici;Colombia;>250k=<500k inhab;250k-500k;Colombia;Dock Based;Public;Government;Yes;No
+Vbike;México;>500k=<1Mi inhab;500k-1000k;Mexico;Dockless;Private;Joint venture;No;Yes
+VillaBici;Colombia;>250k=<500k inhab;250k-500k;Colombia;Dock Based;Public;Government;Yes;No
+Yellow;Brasil;>500k=<1Mi inhab;500k-1000k;Brazil;Dockless;Private;Joint venture;No;Yes
+Yellow;Brasil;>1Mi inhab;Over 1000k;Brazil;Dockless;Private;Joint venture;No;Yes
+Yellow;Brasil;>1Mi inhab;Over 1000k;Brazil;Dockless;Private;Joint venture;No;Yes
+Yellow;Brasil;>1Mi inhab;Over 1000k;Brazil;Dockless;Private;Joint venture;No;Yes
+Yellow;Brasil;>1Mi inhab;Over 1000k;Brazil;Dockless;Private;Joint venture;No;Yes
+Yellow;Brasil;>250k=<500k inhab;250k-500k;Brazil;Dockless;Private;Joint venture;No;Yes
+Yellow;Brasil;>1Mi inhab;Over 1000k;Brazil;Dockless;Private;Joint venture;No;Yes
+Yellow;Brasil;>100k=<250k inhab;100k-250k;Brazil;Dockless;Private;Joint venture;No;Yes
+Yellow;Brasil;>250k=<500k inhab;250k-500k;Brazil;Dockless;Private;Joint venture;No;Yes
+Yellow;Brasil;>250k=<500k inhab;250k-500k;Brazil;Dockless;Private;Joint venture;No;Yes
+Yellow;Brasil;>1Mi inhab;Over 1000k;Brazil;Dockless;Private;Joint venture;No;Yes
