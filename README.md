@@ -44,15 +44,34 @@ In the Table 2, we describe the original dataset (raw data) variables used in th
 <br>     
 Table 2. Database variables developed by LABIKS
 
-|**TOPICs**|**Characteristics**|**Description**|
-| :-: | :-: | :-: | 
-|BSSs across Latin America|System\_group|<p>BSS name, </p><p>Colombia,</p><p>` `Mexico,</p><p>` `Argentina, </p><p>Others</p>|Categorical (Factor)|
-||City Pop\_Group|<p>Up to 100k, 100k-250k, </p><p>250k-500k, 500k-1000k,</p><p>` `Over 1000k</p>|Ordinal (Factor)|
-||System\_Type|<p>Dockbased; </p><p></p>|Categorical (Factor)|
-|` `System management|Fee|Yes, No|Binary (Factor)|
-||SponsorSector\_Group|<p>Financial, Government, </p><p>Joint venture, </p><p>Health, </p><p>Other\*</p>|Categorical (Factor)|
-|` `Systems operator|Operator\_Type|<p>Private;</p><p>Public</p>|Binary (Factor)|
-||Transit Integration|<p>Yes,</p><p>` `No</p>|Binary (Factor)|
+| Topics                    | Characteristics       | Description                                               |
+|:-------------------------:|:---------------------:|:---------------------------------------------------------:|
+| BSSs across Latin America | System                | BSS name                                                  |
+|                           | Country               | BSS country location                                      |
+|                           | City                  | BSS city location                                         |
+|                           | Population            | City or Metropolitan Area inhabitants                     |
+| System's characteristics  | Type                  | BSS typology                                              |
+|                           | Dock stations         | Number of docked stations                                 |
+|                           | Virtual stations      | Number of dockless stations                               |
+|                           | Docks                 | Number of dock points                                     |
+|                           | Bikes                 | Number of bicycles available                              |
+|                           | Current Technology    | BSS equipment model in use                                |
+|                           | Old Technology        | BSS equipment superseded model                            |
+| System's management       | Operator              | BSS operator                                              |
+|                           | Responsible Entity    | trustee and manager of an investment in BSS               |
+|                           | Sponsor               | BSS sponsor type                                          |
+| System's operation        | Transit Integration   | Indicates if the BSS and transit has payment integration� |
+|                           | Opening Hours         | BSS working hours                                         |
+|                           | Fees                  | BSS pass fares                                            |
+|                           | Payment Options       | BSS payment methods                                       |
+|                           | Overtime Charges      | BSS overtime additional Fee                               |
+| Implementation History    | Launched              | BSS release date                                          |
+|                           | Shut down             | BSS closed                                                |
+|                           | Relaunch              | BSS relaunch date                                         |
+|                           | Description Re-launch | Relaunch characteristics                                  |
+| System's data             | Open Data             | BSS payment methods                                       |
+|                           | API Data              | Data availability by API�                                 |
+
 Source: Developed by authors (2021)
 
 
