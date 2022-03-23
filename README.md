@@ -102,8 +102,7 @@ Source: Developed by authors (2021)
 | dockbased_tidy |  dataset | .csv | analyzed data |Multiple Correspondence Analysis (MCA) input dataset serves as input for Table 3|Yes
 | annex_b_dockbased_tidy_descriptive-analysis-X2output| statitstical test |.txt |Annex Statitstical Tests|Descriptive Analysis of Chi_Square output dataset |Yes
 | annex_C_MCA_dockbased_160122 | statitstical test |.txt | Annex Statitstical Tests| MCA Analysis and Results |Yes
-| MCA_dockbased_DescriptAnalysis_input_dataset|  image | .png |  input original dataset |Descriptive Analysis of MCA dataset |Yes
-| MCA_dockbased_DescriptAnalysis_input_dataset|  image | .png |  input original dataset |serves as input for Table 2, 3 and Figure 5. |Yes
+| MCA_dockbased_DescriptAnalysis_input_dataset|  image | .png |  input original dataset |Descriptive Analysis of MCA dataset serves as input for Figure 2 |Yes
 | Script_URBE-2021 | code | .R | Script |Methods and Findings| Yes 
 
 
