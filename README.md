@@ -24,55 +24,40 @@ email: jdecastro@pet.coppe.ufrj.br
 Institution: [Transportation Engineering Program at Federal University of Rio de Janeiro](https://www.pet.coppe.ufrj.br/index.php/pt/) 
 [ORCID:](https://orcid.org/0000-0002-4841-1576) 
 
-### **METHODS FOR PROCESSING THE DATA**
+### **METHODS FOR PROCESSING THE DATA AND FINDINGS**
 
+Code script (R version 4.0.4) that will allow you to replicate the methodology for data analysis and the results found. for data cleaning and analysis is provided as part of the dataset. It is available at https://bit.ly/3D3ieZy for review. 
+The goal here is transparency and accountability: anyone could replicate the research findings with the data and the R-script, an objective aligned with the best practices of open science
+
+The provided code reproduces:
+
+- All dataset (input and output) provided in the paper
+- Annex Statistical Test (descriptive statistics, Chi-Square and Multiple Correspondance Analysis)
+- Multiple Correspondance Analysis and Findings  
+
+It will be uploaded to the [DATAVERSER JOURNAL REPOSITORY](https://doi.org/10.48331/scielodata.9CQMA6) once the paper has been conditionally accepted.
 
 ### **DATABASE GLOSSARY**
 
-In the Table 1, we describe the original dataset (raw data) variables used in the study and the possible values for every system. This contains was copied from [LABIKS/Annual Report 2019](https://github.com/LABIKS/Annual_reports.git).
+In the Table 2, we describe the original dataset (raw data) variables used in the study and the possible values for every system. This contains was adapted from [LABIKS/Annual Report 2019](https://github.com/LABIKS/Annual_reports.git).
      
 <br>     
-Table 1. Study’s variables 
+Table 2. Database variables developed by LABIKS
 
-| Variables | Description | Answers values | Answer description |
-| --- | --- | --- | --- |
-| System | Bike Sharing System (BSS) name |		
-| Country | Country where BSS is located |		
-| City | City where BSS is located |		
-| Population | BSS City or Metropolitan Area population 		
-| Type | System type | Dock based | BSSs with stations |
-| |   | Dockless | BSSs without stations |
-| Dock Stations | Number of stations |		
-| Virtual Stations | Number of dockless virtual stations |		
-| Docks | Number of docks available |		
-| Bikes | Number of bicycles available |		
-| Operator | System operator |	
-| Reponsible Entity | Reponsible entities |	
-| Tecnology / Equipament | BSS tecnologhy |		
-| Old Tecnology / Equipament | BSS Old Tecnologhy |		
-| Sponsor | System sponsor |		
-| Transit Integration | Indicates if the BSS has tariff transit integration with the transit system | Yes |
-| | | with *** | Integrated system with a specific card |
- | | | No | No Integrated system |
-| Opening Hours | System working hours |	
-| Fees | System tariff plans |
-| Payment Options | System available payment options | Credit Card |
-| |  | Debit Card |
-| Over Time Additional Fee| Overtime additional fee when it applies |Yes | 	
-| | | Yes, Hour’s penalty | Systems with hours penalty for overtime |
-| | | Yes, Days Penalty | Systems with days penalty for overtime |
-|  | | No |	
-| Launched | System release date |		
-| Shut down | System termination |		
-| Relaunch | System relaunch date |		
-| Description Re-launch | Relaunch characteristics |		
-| Open Data | System open data website |	
-| API/Data | Available data format via API |		
-|Website | System website |		
-| Last update LatinoSBP | Last update date |		
-| Source | Information’s sources |	
+|**TOPICs**|**Characteristics**|**Description**|
+| :-: | :-: | :-: | 
+|BSSs across Latin America|System\_group|<p>BSS name, </p><p>Colombia,</p><p>` `Mexico,</p><p>` `Argentina, </p><p>Others</p>|Categorical (Factor)|
+||City Pop\_Group|<p>Up to 100k, 100k-250k, </p><p>250k-500k, 500k-1000k,</p><p>` `Over 1000k</p>|Ordinal (Factor)|
+||System\_Type|<p>Dockbased; </p><p></p>|Categorical (Factor)|
+|` `System management|Fee|Yes, No|Binary (Factor)|
+||SponsorSector\_Group|<p>Financial, Government, </p><p>Joint venture, </p><p>Health, </p><p>Other\*</p>|Categorical (Factor)|
+|` `Systems operator|Operator\_Type|<p>Private;</p><p>Public</p>|Binary (Factor)|
+||Transit Integration|<p>Yes,</p><p>` `No</p>|Binary (Factor)|
+Source: Developed by authors (2021)
 
-**Table 3 -**  Variable Selection for Multiple Correspondence Analysis
+
+
+**Table 3 -**  Variable Selection for Multiple Correspondence Analysis 
 
 
 |**TOPIC**|**VARIABLE**|**CATEGORIES**|**DATA TYPE**|
@@ -87,44 +72,21 @@ Table 1. Study’s variables
 Source: Developed by authors (2021)
 
 
-### **DATASET REPOSITORY CONTENT**
+### **DATASET LIST**
 
-The provided code reproduces:
+| File Name | Type | Format | Folder | Notes| Provided | 
+| :---: |:---: | :---:  |  :---:   | :---:| :---:| 
+| BSS_LA_DataBase | dataset| .csv | raw data |original dataset serves as input for Table 2 | Yes
+| bss_tidy | dataset | .csv  | analyzed data |serves as input for Chi-Square Test of Independence (Pearson) |Yes
+| annex_a_bss_tidy_descriptive-analysis| statitstical test| .txt | Annex Statitstical Tests|Descriptive Analysis of Chi_Square input dataset|Yes
+| X2_bss_tidy | dataset | .csv  | analyzed data |output for Chi-Square Test of Independence (Pearson) |Yes
+| dockbased_tidy |  dataset | .csv | analyzed data |Multiple Correspondence Analysis (MCA) input dataset serves as input for Table 3|Yes
+| annex_b_dockbased_tidy_descriptive-analysis-X2output| statitstical test |.txt |Annex Statitstical Tests|Descriptive Analysis of Chi_Square output dataset |Yes
+| annex_C_MCA_dockbased_160122 | statitstical test |.txt | Annex Statitstical Tests| MCA Analysis and Results |Yes
+| MCA_dockbased_DescriptAnalysis_input_dataset|  image | .png |  input original dataset |Descriptive Analysis of MCA dataset |Yes
+| MCA_dockbased_DescriptAnalysis_input_dataset|  image | .png |  input original dataset |serves as input for Table 2, 3 and Figure 5. |Yes
+| Script_URBE-2021 | code | .R | Script |Methods and Findings| Yes 
 
-- [ ] All numbers provided in text in the paper
-- [ ] All tables and figures in the paper
-- [ ] Selected tables and figures in the paper, as explained and justified below.
-
-Here you will find the repository's content along the years. The report will be released every year, using data from the past year.
-
-*For example: The report with 2019's data was release in 2020.* 
-
-<br>
-Table 2. Dataset Contents
-
-|Content| Type | Format | Folder | Note 
-| :---: |:---: | :---:  |  :---:   | :---:| 
-| BSS_LA_DataBase | dataset| .csv | raw data |input original dataset
-| Systems_type_per_country |  image | .png | input original dataset |
-| Systems_per_cities_population |  image | .png | input original dataset |raw data
-| BSS_LA_Timeline |  image | .png | input original dataset |raw data
-| Largest_LA_Systems |  image | .png | input original dataset |raw data
-| Operators_type |  image | .png | input original dataset |raw data
-| Sponsors_sectors|  image | .png |  input original dataset |raw data
-| LatinoSBP_Report_2019_EN |  text | .pdf | 
-
-> Code for data cleaning and analysis is provided as part of the replication package. It is available at https://dropbox.com/link/to/code/XYZ123ABC for review. It will be uploaded to the [JOURNAL REPOSITORY] once the paper has been conditionally accepted.
-
-Dataset list
-------------
-
-> INSTRUCTIONS: In some cases, authors will provide one dataset (file) per data source, and the code to combine them. In others, in particular when data access might be restrictive, the replication package may only include derived/analysis data. Every file should be described. This can be provided as a Excel/CSV table, or in the table below.
-
-| Data file | Source | Notes    |Provided |
-|-----------|--------|----------|---------|
-| `data/raw/lbd.dta` | LBD | Confidential | No |
-| `data/raw/terra.dta` | IPUMS Terra | As per terms of use | Yes |
-| `data/derived/regression_input.dta`| All listed | Combines multiple data sources, serves as input for Table 2, 3 and Figure 5. | Yes |
 
 Last updated: [2022-02-04].
 
